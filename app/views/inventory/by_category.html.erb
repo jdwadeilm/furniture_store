@@ -1,0 +1,16 @@
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th colspan="1"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% products.where(category: "bedroom") %>
+      <tr>
+        <td><%= product.category %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
