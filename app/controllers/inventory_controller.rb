@@ -4,9 +4,10 @@ class InventoryController < ApplicationController
   end
 
   def one_product
+  	@product = Product.find(1)
   end
 
   def by_category
-  	@products = Product.all
+  	@product = Product.where(category: "Bedroom")
   end
 end
